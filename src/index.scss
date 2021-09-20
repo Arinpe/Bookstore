@@ -1,0 +1,146 @@
+@import "~bootstrap/scss/bootstrap";
+
+.App {
+  background-color: rgba(0, 0, 0, 0.05);
+  min-height: 100vh;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+.category {
+  color: #121212;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.title {
+  color: #121212;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.author {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.book-actions button {
+  color: #4386bf;
+  padding: 5px 15px;
+  border-left: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.book-actions button:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.oval {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  background: linear-gradient(to bottom, #307bbe, #379cf6);
+  border-radius: 50%;
+}
+
+.oval::after {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.oval::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 17px;
+  left: 5px;
+  top: 0;
+  background-color: white;
+}
+
+.percentage {
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.completed {
+  color: #121212;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.book-left {
+  width: 70%;
+}
+
+.book {
+  background-color: white;
+}
+
+.book-right {
+  position: relative;
+  width: 30%;
+  font-family: RobotoSlab, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-stretch: normal;
+
+  .current-chapter {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: normal;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.4px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.07);
+    transform: translateY(-50%);
+  }
+}
+
+.form-title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
