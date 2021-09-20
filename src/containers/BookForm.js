@@ -12,14 +12,14 @@ const initialValue = {
 };
 const BookForm = ({ createBook }) => {
   const [input, setInput] = useState(initialValue);
-  const allCategories = categories.map(category => (
+  const allCategories = categories.map((category) => (
     <option
       key={category}
     >
       {category}
     </option>
   ));
-  const handleChange = e => setInput({ ...input, [e.target.name]: e.target.value });
+  const handleChange = (e) => setInput({ ...input, [e.target.name]: e.target.value });
   const validateInputError = () => {
     const { title, author, category } = input;
     let error = '';
@@ -36,7 +36,7 @@ const BookForm = ({ createBook }) => {
     }
     return error;
   };
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const error = validateInputError();
     if (!error) {
@@ -66,7 +66,7 @@ const BookForm = ({ createBook }) => {
 BookForm.propTypes = {
   createBook: PropTypes.func.isRequired,
 };
-const mapDispatchToProps = dispatch => ({
-  createBook: book => dispatch(addBook(book)),
+const mapDispatchToProps = (dispatch) => ({
+  createBook: (book) => dispatch(addBook(book)),
 });
 export default connect(null, mapDispatchToProps)(BookForm);

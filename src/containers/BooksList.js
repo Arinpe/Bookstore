@@ -9,12 +9,12 @@ import { removeBook, filterBooks } from '../actions';
 const BooksList = ({
   books, deleteBook, filterBooks, filterParam,
 }) => {
-  const handleRemoveBook = id => deleteBook(id);
-  const handleFilter = e => filterBooks(e.target.value);
+  const handleRemoveBook = (id) => deleteBook(id);
+  const handleFilter = (e) => filterBooks(e.target.value);
 
   const filteredBooks = filterParam === 'All' ? books : filterBooksByCategory(books, filterParam);
 
-  const allBooks = filteredBooks.map(book => (
+  const allBooks = filteredBooks.map((book) => (
     <Book
       id={generateRandomNumber()}
       handleRemoveBook={handleRemoveBook}
@@ -39,14 +39,14 @@ BooksList.propTypes = {
   filterParam: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   books: state.books,
   filterParam: state.filter,
 });
 
-const mapDispatchToProps = dispatch => ({
-  deleteBook: id => dispatch(removeBook(id)),
-  filterBooks: category => dispatch(filterBooks(category)),
+const mapDispatchToProps = (dispatch) => ({
+  deleteBook: (id) => dispatch(removeBook(id)),
+  filterBooks: (category) => dispatch(filterBooks(category)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

@@ -7,7 +7,7 @@ function CategoryFilter({ handleFilter }) {
     <div className="d-flex align-items-center">
       <span className="mr-3">Category: </span>
       <select className="form-control" name="categoryFilter" id="categoryFilter" onChange={handleFilter}>
-        {['All', ...categories].map(category => <option key={category}>{category}</option>)}
+        {['All', ...categories].map((category) => <option key={category}>{category}</option>)}
       </select>
     </div>
   );
