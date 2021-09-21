@@ -5,7 +5,7 @@ import { generateRandomNumber } from '../common';
 
 function Book({ book, handleRemoveBook }) {
   const {
-    id, title, author, category,
+    title, author, category,
   } = book;
   return (
     <div className="d-flex justify-content-between book p-4 mb-3">
@@ -16,7 +16,7 @@ function Book({ book, handleRemoveBook }) {
           <p className="author mb-2">{author}</p>
           <div className="d-flex book-actions">
             <Button variant="link">Comments</Button>
-            <Button onClick={() => handleRemoveBook(id)} variant="link">Remove</Button>
+            <Button onClick={() => handleRemoveBook(book)} variant="link">Remove</Button>
             <Button variant="link">Edit</Button>
           </div>
         </div>

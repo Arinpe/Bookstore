@@ -9,7 +9,7 @@ import { removeBook, filterBooks } from '../actions';
 const BooksList = ({
   books, deleteBook, filterBooks, filterParam,
 }) => {
-  const handleRemoveBook = (id) => deleteBook(id);
+  const handleRemoveBook = (book) => deleteBook(book);
   const handleFilter = (e) => filterBooks(e.target.value);
 
   const filteredBooks = filterParam === 'All' ? books : filterBooksByCategory(books, filterParam);
@@ -45,7 +45,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  deleteBook: (id) => dispatch(removeBook(id)),
+  deleteBook: (book) => dispatch(removeBook(book)),
   filterBooks: (category) => dispatch(filterBooks(category)),
 });
 
