@@ -25,16 +25,4 @@ export const defaultBooks = [
     author: 'EDITH WHARTON',
     category: categories[generateRandomNumber(categories.length)],
   },
-  // {
-  //   id: generateRandomNumber(),
-  //   title: 'EAST OF EDEN',
-  //   author: 'JOHN STEINBECK',
-  //   category: categories[generateRandomNumber(categories.length)],
-  // },
-  // {
-  //   id: generateRandomNumber(),
-  //   title: 'THE SUN ALSO RISES',
-  //   author: 'ERNEST HEMINGWAY',
-  //   category: categories[generateRandomNumber(categories.length)],
-  // },
 ];
