@@ -15,11 +15,18 @@ const store = createStore(
 
 const booksArray = [
   {
-   title: 'Harey Potter',
-  author: 'Tola',
-  'category'
+    title: 'Harey Potter',
+    author: 'Tola',
+    category: 'action',
   },
-  ]
+
+  const booksArray = [
+    {
+      title: 'Face of the Highlighted ',
+      author: 'Joshua',
+      category: 'Commedy',
+    },
+];
 
 ReactDOM.render(
   <Provider store={store}>
@@ -29,5 +36,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'),
 );
-
-
