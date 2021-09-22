@@ -26,6 +26,20 @@ const booksArray = [
       author: 'Joshua',
       category: 'Commedy',
     },
+
+    const booksArray = [
+      {
+        title: 'Speed of Light',
+        author: 'Grace',
+        category: 'Sci-friction',
+      },
+
+      const booksArray = [
+        {
+          title: 'Elongated Phases',
+          author: 'Bolu',
+          category: 'History',
+        },
 ];
 
 ReactDOM.render(
