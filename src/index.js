@@ -17,7 +17,7 @@ const booksArray = [
   {
    title: 'Harey Potter',
   author: 'Tola',
-  category: string
+  'category'
   },
   ]
 
