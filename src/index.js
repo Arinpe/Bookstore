@@ -20,26 +20,23 @@ const booksArray = [
     category: 'action',
   },
 
-  const booksArray = [
-    {
-      title: 'Face of the Highlighted ',
-      author: 'Joshua',
-      category: 'Commedy',
-    },
+  {
+    title: 'Enlogated Phases',
+    author: 'Joshua',
+    category: 'History',
+  },
 
-    const booksArray = [
-      {
-        title: 'Speed of Light',
-        author: 'Grace',
-        category: 'Sci-friction',
-      },
+  {
+    title: 'Speed of Light',
+    author: 'Grace',
+    category: 'Sci-fiction',
+  },
 
-      const booksArray = [
-        {
-          title: 'Elongated Phases',
-          author: 'Bolu',
-          category: 'History',
-        },
+  {
+    title: 'Face of the Highlighted',
+    author: 'Bolu',
+    category: 'Commedy',
+  },
 ];
 
 ReactDOM.render(
