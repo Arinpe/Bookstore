@@ -13,6 +13,14 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
+const booksArray = [
+  {
+   title: 'Harey Potter',
+  author: 'Tola',
+  category: string
+  },
+  ]
+
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
@@ -21,3 +29,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'),
 );
+
+
