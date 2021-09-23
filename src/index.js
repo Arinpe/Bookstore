@@ -7,12 +7,6 @@ import rootReducer from './reducers';
 
 import './index.scss';
 
-const store = createStore(
-  rootReducer,
-  // eslint-disable-next-line no-underscore-dangle
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-);
-
 const booksArray = [
   {
     title: 'Harey Potter',
@@ -38,6 +32,12 @@ const booksArray = [
     category: 'Commedy',
   },
 ];
+const store = createStore(
+  rootReducer,
+  booksArray,
+  // eslint-disable-next-line no-underscore-dangle
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 
 ReactDOM.render(
   <Provider store={store}>
