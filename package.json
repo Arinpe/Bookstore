@@ -43,6 +43,8 @@
     "@babel/eslint-parser": "^7.15.4"
   },
   "engines": {
-    "node": ">=12.18.4"
+    "node": "12.18.4",
+    "npm": "7.22.0"
   }
+
 }
