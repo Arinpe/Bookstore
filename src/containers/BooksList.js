@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
 import Navbar from '../components/Navbar';
+import CategoryFilter from '../components/CategoryFilter';
 import { generateRandomNumber, filterBooksByCategory } from '../common';
 import { removeBook, filterBooks } from '../actions';
 
@@ -24,7 +25,8 @@ const BooksList = ({
   ));
   return (
     <div className="books-display">
-      <Navbar handleFilter={handleFilter} />
+      <Navbar />
+      <CategoryFilter handleFilter={handleFilter} />
       <div className="container py-5">
         {allBooks}
       </div>

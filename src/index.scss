@@ -144,3 +144,11 @@ header {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+.select-wrapper {
+  width: 200px;
+  position: absolute;
+  top: 28px;
+  left: 40%;
+  transform: translateX(-50%);
+}

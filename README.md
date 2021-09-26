@@ -1,4 +1,4 @@
-## A Bookstore Application
+## A Bookstore Application.
 This is a Bookstore application, where users get to display the books they have read or currently reading. This app is build with React and Redux 
 
 
