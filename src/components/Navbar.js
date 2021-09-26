@@ -1,14 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import CategoryFilter from './CategoryFilter';
 
-const NavBar = ({ handleFilter }) => (
+const NavBar = () => (
   <header className="bg-white py-4">
     <nav className="d-flex justify-content-between container">
       <div className="d-flex align-items-center">
         <h3 className="text-primary font-weight-bold">Bookstore CMS</h3>
         <span className="text-secondary mx-5">Books</span>
-        <CategoryFilter handleFilter={handleFilter} />
       </div>
       <div className="text-primary h2">
         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +18,4 @@ const NavBar = ({ handleFilter }) => (
   </header>
 );
 
-NavBar.propTypes = {
-  handleFilter: PropTypes.func.isRequired,
-};
 export default NavBar;

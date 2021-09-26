@@ -7,34 +7,36 @@ import rootReducer from './reducers';
 
 import './index.scss';
 
-const booksArray = [
-  {
-    title: 'Harey Potter',
-    author: 'Tola',
-    category: 'action',
-  },
+const books = {
+  books: [
+    {
+      title: 'Harey Potter',
+      author: 'Tola',
+      category: 'action',
+    },
 
-  {
-    title: 'Enlogated Phases',
-    author: 'Joshua',
-    category: 'History',
-  },
+    {
+      title: 'Enlogated Phases',
+      author: 'Joshua',
+      category: 'History',
+    },
 
-  {
-    title: 'Speed of Light',
-    author: 'Grace',
-    category: 'Sci-fiction',
-  },
+    {
+      title: 'Speed of Light',
+      author: 'Grace',
+      category: 'Sci-fiction',
+    },
 
-  {
-    title: 'Face of the Highlighted',
-    author: 'Bolu',
-    category: 'Commedy',
-  },
-];
+    {
+      title: 'Face of the Highlighted',
+      author: 'Bolu',
+      category: 'Commedy',
+    },
+  ],
+};
 const store = createStore(
   rootReducer,
-  booksArray,
+  books,
   // eslint-disable-next-line no-underscore-dangle
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
