@@ -10,27 +10,31 @@ import './index.scss';
 const books = {
   books: [
     {
+      id: 1,
       title: 'Harey Potter',
       author: 'Tola',
       category: 'action',
     },
 
     {
+      id: 2,
       title: 'Enlogated Phases',
       author: 'Joshua',
       category: 'History',
     },
 
     {
+      id: 3,
       title: 'Speed of Light',
       author: 'Grace',
-      category: 'Sci-fiction',
+      category: 'Sci-Fi',
     },
 
     {
+      id: 4,
       title: 'Face of the Highlighted',
       author: 'Bolu',
-      category: 'Commedy',
+      category: 'Learning',
     },
   ],
 };

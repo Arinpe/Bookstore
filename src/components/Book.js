@@ -21,7 +21,7 @@ function Book({ book, handleRemoveBook }) {
           </div>
         </div>
         <div className="d-flex justify-content-center align-items-center">
-          <div className="oval mr-4" />
+          <div className="oval me-4" />
           <h3 className="percentage">
             {generateRandomNumber(100)}
             %
@@ -35,7 +35,7 @@ function Book({ book, handleRemoveBook }) {
           Chapter:
           {generateRandomNumber(20)}
         </h3>
-        <Button variant="primary">Update Progress</Button>
+        <Button className="mt-3" variant="primary">Update Progress</Button>
       </div>
     </div>
   );

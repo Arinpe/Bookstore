@@ -14,9 +14,6 @@ header {
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
@@ -25,9 +22,6 @@ header {
   color: #121212;
   font-family: RobotoSlab, sans-serif;
   font-size: 22px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
   letter-spacing: -0.2px;
 }
@@ -36,9 +30,6 @@ header {
   font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
 }
@@ -88,9 +79,6 @@ header {
 .percentage {
   font-family: Montserrat, sans-serif;
   font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
 }
 
 .completed {
@@ -111,9 +99,6 @@ header {
   position: relative;
   width: 30%;
   font-family: RobotoSlab, sans-serif;
-  font-style: normal;
-  line-height: normal;
-  font-stretch: normal;
 
   .current-chapter {
     opacity: 0.5;
@@ -138,6 +123,16 @@ header {
     background-color: rgba(0, 0, 0, 0.07);
     transform: translateY(-50%);
   }
+}
+
+.category,
+.title,
+.author,
+.percentage,
+.book-right {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
 }
 
 .form-title {
