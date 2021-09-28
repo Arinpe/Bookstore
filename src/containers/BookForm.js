@@ -52,13 +52,13 @@ const BookForm = ({ createBook }) => {
       <h3 className="form-title">ADD NEW BOOK</h3>
       <p className="text-danger" id="error" />
       <form className="d-flex" onSubmit={handleSubmit}>
-        <input className="form-control mr-2" type="text" name="title" value={input.title} placeholder="Title" onChange={handleChange} />
-        <input className="form-control mr-2" type="text" name="author" value={input.author} placeholder="Author" onChange={handleChange} />
-        <select className="form-control mr-2" name="category" value={input.category} id="category" onChange={handleChange}>
+        <input className="form-control me-2" type="text" name="title" value={input.title} placeholder="Title" onChange={handleChange} />
+        <input className="form-control me-2" type="text" name="author" value={input.author} placeholder="Author" onChange={handleChange} />
+        <select className="form-control me-2" name="category" value={input.category} id="category" onChange={handleChange}>
           <option value="" disabled hidden>Category</option>
           {allCategories}
         </select>
-        <Button className="w-50" type="submit" variant="primary">Add Book</Button>
+        <Button className="w-50 text-uppercase" type="submit" variant="primary">Add Book</Button>
       </form>
     </div>
   );
