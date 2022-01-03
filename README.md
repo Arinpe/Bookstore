@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 - Github: [@Arinpe](https://github.com/Arinpe)
 - Twitter: [@_detola_](https://twitter.com/_detola_)
 - Linkedin: [aadetola](http://www.linkedin.com/in/aadetola)
-
+ 
 
 ## 🤝 Contributing
 
