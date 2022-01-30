@@ -28,7 +28,6 @@ To get a local copy up and running follow these simple example steps.
 - run ```npm install```
 - run ```npm run build```
 - Open the index.html file with any browser of your choice.
-
 ## Author
 
 👤 **Adesuyi Adetola**
