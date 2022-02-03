@@ -1,14 +1,52 @@
-import React from 'react';
-import BooksList from '../containers/BooksList';
-import BookForm from '../containers/BookForm';
-import Form from  './common/form';
+/* eslint-disable */
+import React, { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Form from './common/form';
+import Bookstore from './common/Bookstore';
+import '../App.css';
 
-const App = () => (
-  <div className="App pb-5">
-    <Form />
-    <BooksList /> 
-    <BookForm />
-  </div>
-);
+function App() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  return (
+    <Router>
+      <div className="App">
+        <>
+          <Routes>
+            <Route
+              path="/login"
+              element={(
+                <Form
+                  title="Login"
+                  setEmail={setEmail}
+                  setPassword={setPassword}
+                />
+              )}
+            />
+            <Route
+              path="/register"
+              element={(
+                <Form
+                  title="Register"
+                  setEmail={setEmail}
+                  setPassword={setPassword}
+                />
+              )}
+            />
 
+            <Route
+              path="/store"
+              element={<Bookstore />} />
+              )}
+          </Routes>
+        </>
+
+      </div>
+    </Router>
+  );
+}
 export default App;
