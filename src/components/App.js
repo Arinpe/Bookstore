@@ -65,7 +65,7 @@ function App() {
 
             <Route
                     path="*"
-                    element={<Navigate to="/login" />}
+                    element={<Navigate to="/register" />}
                 />
 
           </Routes>
