@@ -1,13 +1,13 @@
+import { Link, Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as React from 'react';
-import { Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '../Button';
 
 export default function BasicTextFields({
-  title, handleAction,
+  title, handleAction, linkPath, linkText,
 }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -51,11 +51,15 @@ export default function BasicTextFields({
       </Box>
 
       <Button title={title} handleAction={() => handleAction(email, password)} />
+
+      <Link to={linkPath}>{linkText}</Link>
     </div>
   );
 }
 
 BasicTextFields.propTypes = {
   title: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
+  linkPath: PropTypes.string.isRequired,
   handleAction: PropTypes.func.isRequired,
 };

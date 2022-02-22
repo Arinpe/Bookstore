@@ -42,23 +42,28 @@ function App() {
       <div className="App">
         <>
           <Routes>
-            <Route path='/login'
+            <Route path='/login, linkPath, linkText'
               element={
                 <Form
                   title="Login"
                   handleAction={loginUser}
+                  linkText="Register if you don't have an account"
+                  linkPath="/login"
                 />}
+              />
             />
             <Route
-              path="/register"
+              path="/register, linkPath, "
               element={(
                 <Form
                   title="Register"
                   handleAction={registerUser}
+                  linkText="Login if you already have an account"
+              linkPath="/login"
                 />
-              )}
+              )} 
+    
             />
-
             <Route
               path="/store"
               element={<Bookstore />} />
