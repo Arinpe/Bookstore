@@ -42,24 +42,23 @@ function App() {
       <div className="App">
         <>
           <Routes>
-            <Route path='/login, linkPath, linkText'
-              element={
+            <Route path='/login '
+              element ={
                 <Form
                   title="Login"
                   handleAction={loginUser}
                   linkText="Register if you don't have an account"
-                  linkPath="/login"
-                />}
+                  linkPath="/register"
+              />}
               />
-            />
             <Route
-              path="/register, linkPath, "
+              path="/register"
               element={(
                 <Form
                   title="Register"
                   handleAction={registerUser}
                   linkText="Login if you already have an account"
-              linkPath="/login"
+                  linkPath="/login"
                 />
               )} 
     
@@ -70,7 +69,7 @@ function App() {
 
             <Route
                     path="*"
-                    element={<Navigate to="/register" />}
+                    element={<Navigate to="/login" />}
                 />
 
           </Routes>
