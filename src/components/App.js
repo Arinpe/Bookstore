@@ -42,7 +42,7 @@ function App() {
       <div className="App">
         <>
           <Routes>
-            <Route path='/login '
+            <Route path='/login'
               element ={
                 <Form
                   title="Login"
@@ -69,7 +69,7 @@ function App() {
 
             <Route
                     path="*"
-                    element={<Navigate to="/login" />}
+                    element={<Navigate to="/register" />}
                 />
 
           </Routes>
